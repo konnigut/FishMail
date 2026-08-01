@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body {
+  background:
+    radial-gradient(ellipse 900px 700px at 20% -5%, rgba(124, 58, 237, 0.5), transparent 65%),
+    radial-gradient(ellipse 900px 800px at 105% 95%, rgba(198, 255, 0, 0.14), transparent 55%),
+    #08010F;
+  color: #F5F3FF;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.grid {
+  position: absolute; inset: 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(245, 243, 255, 0.05) 0 1px, transparent 1px 96px),
+    repeating-linear-gradient(90deg, rgba(245, 243, 255, 0.05) 0 1px, transparent 1px 96px);
+}
+.canvas { position: relative; width: 1080px; height: 1920px; padding: 90px 90px 80px 90px; }
+
+.head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.26em; text-transform: uppercase;
+  color: #C6FF00;
+}
+.head .page { color: rgba(245, 243, 255, 0.55); letter-spacing: 0.16em; }
+.headrule { border: 0; border-top: 1px solid rgba(198, 255, 0, 0.4); margin-top: 26px; }
+
+.stage { margin-top: 90px; }
+h1 {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 104px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.hero {
+  border: 2px solid #C6FF00;
+  box-shadow: 0 0 40px rgba(198, 255, 0, 0.3), inset 0 0 40px rgba(198, 255, 0, 0.06);
+  padding: 44px 48px 42px 48px;
+}
+.hero .l {
+  font-family: 'Geist Mono', monospace;
+  font-size: 25px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: rgba(245, 243, 255, 0.65);
+  margin-bottom: 16px;
+}
+.hero .v {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 108px;
+  line-height: 1;
+  color: #C6FF00;
+  text-shadow: 0 0 26px rgba(198, 255, 0, 0.5);
+}
+.hero p {
+  margin-top: 22px;
+  font-size: 31px; line-height: 1.5;
+  color: rgba(245, 243, 255, 0.78);
+}
+
+.duo { display: flex; gap: 40px; margin-top: 48px; }
+.mini {
+  flex: 1;
+  border: 1px solid rgba(255, 59, 240, 0.6);
+  box-shadow: 0 0 30px -6px rgba(255, 59, 240, 0.35);
+  padding: 34px 38px;
+}
+.mini .v {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 62px;
+  color: #FF3BF0;
+  text-shadow: 0 0 22px rgba(255, 59, 240, 0.5);
+}
+.mini p {
+  margin-top: 14px;
+  font-size: 28px; line-height: 1.45;
+  color: rgba(245, 243, 255, 0.75);
+}
+
+.cta {
+  margin-top: 72px;
+  background: #C6FF00;
+  color: #08010F;
+  box-shadow: 0 0 60px rgba(198, 255, 0, 0.4);
+  padding: 48px 52px;
+}
+.cta .big {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 74px;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+.cta p {
+  margin-top: 16px;
+  font-size: 29px; line-height: 1.45; font-weight: 500;
+  color: rgba(8, 1, 15, 0.75);
+}
+
+.footer {
+  position: absolute; left: 90px; right: 90px; bottom: 80px;
+  border-top: 1px solid rgba(245, 243, 255, 0.3);
+  padding-top: 26px;
+  display: flex; justify-content: space-between;
+  font-family: 'Geist Mono', monospace;
+  font-size: 25px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(245, 243, 255, 0.6);
+  white-space: nowrap;
+}
+.footer .r { color: #C6FF00; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="canvas">
+    <header class="head">
+      <span>Payout-&Uuml;bersicht</span>
+      <span class="page">03&mdash;03</span>
+    </header>
+    <hr class="headrule">
+
+    <main class="stage">
+      <h1>Reden wir<br>&uuml;ber Geld.</h1>
+
+      <div class="hero">
+        <p class="l">Closer &middot; &Oslash; 2&ndash;5 Abschl&uuml;sse &times; 1.575&ndash;1.800&nbsp;&euro;</p>
+        <p class="v">3.150&ndash;9.000&nbsp;&euro;</p>
+        <p>im Monat m&ouml;glich &mdash; 12,5&nbsp;% Provision auf jeden Abschluss.</p>
+      </div>
+
+      <div class="duo">
+        <div class="mini">
+          <p class="v">500&nbsp;&euro;</p>
+          <p>pro Setter-Termin, der zum Abschluss f&uuml;hrt.</p>
+        </div>
+        <div class="mini">
+          <p class="v">250&nbsp;&euro;</p>
+          <p>wenn &uuml;ber deinen Repost jemand startet.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <p class="big">&bdquo;JOB&ldquo; per DM &rarr;</p>
+        <p>Kurzes Gespr&auml;ch, ehrliche Infos &mdash; dann wei&szlig;t du, ob&rsquo;s passt.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Kein Spam</span>
+      <span class="r">Ich stell nur den Kontakt her</span>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="base-b.css">
+<style>
+  .stage { margin-top: 110px; }
+
+  h1 {
+    font-size: 122px;
+    line-height: 1.05;
+    margin-bottom: 90px;
+  }
+
+  .item { display: flex; align-items: flex-start; gap: 40px; }
+  .item + .item { margin-top: 72px; }
+
+  .item .mark {
+    font-family: 'Gloock', serif;
+    font-size: 56px;
+    color: var(--accent);
+    line-height: 1.1;
+    width: 64px; flex-shrink: 0;
+    text-align: center;
+  }
+
+  .item h2 {
+    font-family: 'Gloock', serif;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 1.1;
+  }
+  .item h2 em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    color: var(--accent);
+  }
+  .item p {
+    margin-top: 16px;
+    font-size: 36px;
+    line-height: 1.5;
+    color: rgba(27, 23, 20, 0.8);
+    max-width: 720px;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <header class="masthead">
+      <span>Ob du passt</span>
+      <span class="page">Seite 2 von 3</span>
+    </header>
+    <hr class="mastrule">
+    <hr class="mastrule thin">
+
+    <main class="stage">
+      <h1 class="serif">Du passt,<br>wenn du &hellip;</h1>
+
+      <div class="item">
+        <span class="mark">&#10045;</span>
+        <div>
+          <h2>&hellip; <em>motiviert</em> bist.</h2>
+          <p>Du willst wirklich was erreichen &mdash; nicht nur Stunden absitzen.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span class="mark">&#10045;</span>
+        <div>
+          <h2>&hellip; <em>wachsen</em> willst.</h2>
+          <p>Jede Woche ein St&uuml;ck besser als die Woche davor.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span class="mark">&#10045;</span>
+        <div>
+          <h2>&hellip; <em>Disziplin</em> hast.</h2>
+          <p>Du bleibst dran, auch wenn gerade keiner zuschaut.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span class="mark">&#10045;</span>
+        <div>
+          <h2>&hellip; <em>gut reden</em> kannst.</h2>
+          <p>Gern mit Menschen &mdash; und zuh&ouml;ren kannst du auch.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <hr class="frule">
+      <div class="line">
+        <span class="l">Erfahrung? Optional.</span>
+        <span class="r">Einstellung? Nicht verhandelbar.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

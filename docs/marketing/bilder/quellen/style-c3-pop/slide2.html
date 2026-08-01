@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body {
+  background: #FFDE00;
+  background-image: radial-gradient(rgba(16, 16, 16, 0.09) 2.4px, transparent 2.4px);
+  background-size: 26px 26px;
+  color: #101010;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.canvas { position: relative; width: 1080px; height: 1920px; padding: 84px 90px 80px 90px; }
+.frame { position: absolute; inset: 40px; border: 6px solid #101010; pointer-events: none; }
+
+.head { display: flex; justify-content: space-between; align-items: center; }
+.head .tag {
+  background: #2B44FF; color: #FFDE00;
+  font-size: 26px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 16px 26px;
+  transform: rotate(-1.5deg);
+  box-shadow: 8px 8px 0 #101010;
+}
+.head .page { font-size: 28px; font-weight: 700; }
+
+.stage { margin-top: 110px; }
+h1 {
+  font-family: 'Erica One', sans-serif;
+  font-size: 118px;
+  line-height: 1.0;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.item {
+  display: flex; align-items: center; gap: 38px;
+  background: #FFFFFF;
+  border: 5px solid #101010;
+  box-shadow: 12px 12px 0 #101010;
+  padding: 30px 40px;
+}
+.item + .item { margin-top: 52px; }
+.item:nth-child(even) { transform: rotate(0.8deg); }
+.item:nth-child(odd) { transform: rotate(-0.8deg); }
+
+.item .badge {
+  flex-shrink: 0;
+  width: 92px; height: 92px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Erica One', sans-serif;
+  font-size: 40px;
+  color: #FFDE00;
+  background: #FF3A2F;
+  border: 4px solid #101010;
+}
+.item:nth-child(even) .badge { background: #2B44FF; }
+
+.item .word {
+  font-family: 'Erica One', sans-serif;
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.item p {
+  margin-top: 10px;
+  font-size: 31px; line-height: 1.35; font-weight: 500;
+  color: rgba(16, 16, 16, 0.85);
+}
+
+.footer {
+  position: absolute; left: 90px; right: 90px; bottom: 84px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 27px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.footer .r { background: #101010; color: #FFDE00; padding: 10px 18px; }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="frame"></div>
+    <header class="head">
+      <span class="tag">Ob du passt</span>
+      <span class="page">2/3</span>
+    </header>
+
+    <main class="stage">
+      <h1>Du passt,<br>wenn:</h1>
+
+      <div class="item">
+        <span class="badge">01</span>
+        <div>
+          <p class="word">Motiviert</p>
+          <p>Du willst wirklich was erreichen &mdash; nicht nur Stunden absitzen.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="badge">02</span>
+        <div>
+          <p class="word">Wachsen</p>
+          <p>Jede Woche ein St&uuml;ck besser als die Woche davor.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="badge">03</span>
+        <div>
+          <p class="word">Disziplin</p>
+          <p>Dranbleiben &mdash; auch ohne Chef im Nacken.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="badge">04</span>
+        <div>
+          <p class="word">Reden</p>
+          <p>Du kannst gut mit Menschen &mdash; und zuh&ouml;ren sowieso.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Erfahrung optional</span>
+      <span class="r">Einstellung Pflicht</span>
+    </footer>
+  </div>
+</body>
+</html>

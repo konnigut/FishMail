@@ -1,0 +1,68 @@
+/* Signal & Substanz — Serie in drei Tafeln, 1080×1920 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --ink: #0C0D10;
+  --paper: #F2EEE4;
+  --signal: #D7FE55;
+  --fog: #8A8F98;
+  --margin: 96px;
+}
+
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+.canvas {
+  position: relative;
+  width: 1080px; height: 1920px;
+  display: flex; flex-direction: column;
+  padding: 84px var(--margin) 76px var(--margin);
+}
+
+/* ---------- Registratur (Kopfzeile) ---------- */
+.register {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.32em; text-transform: uppercase;
+}
+.register .index { letter-spacing: 0.18em; }
+
+.rule {
+  height: 1px; border: 0;
+  margin-top: 34px;
+}
+
+/* ---------- Fußzeile ---------- */
+.footer {
+  position: absolute;
+  left: var(--margin); right: var(--margin);
+  bottom: 76px;
+}
+.footer .rule { margin-top: 0; margin-bottom: 32px; }
+.footer .line {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: 'Geist Mono', monospace;
+  font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ---------- Display-Typografie ---------- */
+.display {
+  font-family: 'Big Shoulders', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.92;
+}
+
+.body-copy {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.mono { font-family: 'Geist Mono', monospace; }

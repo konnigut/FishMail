@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body {
+  background:
+    radial-gradient(ellipse 900px 700px at 85% -5%, rgba(124, 58, 237, 0.5), transparent 65%),
+    radial-gradient(ellipse 800px 800px at -10% 60%, rgba(255, 59, 240, 0.24), transparent 60%),
+    #08010F;
+  color: #F5F3FF;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.grid {
+  position: absolute; inset: 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(245, 243, 255, 0.05) 0 1px, transparent 1px 96px),
+    repeating-linear-gradient(90deg, rgba(245, 243, 255, 0.05) 0 1px, transparent 1px 96px);
+}
+.canvas { position: relative; width: 1080px; height: 1920px; padding: 90px 90px 80px 90px; }
+
+.head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.26em; text-transform: uppercase;
+  color: #C6FF00;
+}
+.head .page { color: rgba(245, 243, 255, 0.55); letter-spacing: 0.16em; }
+.headrule { border: 0; border-top: 1px solid rgba(198, 255, 0, 0.4); margin-top: 26px; }
+
+.stage { margin-top: 100px; }
+h1 {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 112px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+h1 .neon {
+  color: #C6FF00;
+  text-shadow: 0 0 18px rgba(198, 255, 0, 0.55);
+}
+
+.req {
+  border-left: 4px solid #FF3BF0;
+  box-shadow: -18px 0 40px -22px rgba(255, 59, 240, 0.55);
+  padding: 8px 0 10px 42px;
+}
+.req + .req { margin-top: 62px; }
+.req h2 {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 62px;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+.req h2 .idx {
+  font-family: 'Geist Mono', monospace;
+  font-size: 27px; vertical-align: 26px;
+  color: #FF3BF0; letter-spacing: 0.1em;
+  margin-right: 20px;
+}
+.req p {
+  margin-top: 14px;
+  font-size: 34px; line-height: 1.45;
+  color: rgba(245, 243, 255, 0.75);
+  max-width: 760px;
+}
+
+.footer {
+  position: absolute; left: 90px; right: 90px; bottom: 80px;
+  border-top: 1px solid rgba(245, 243, 255, 0.3);
+  padding-top: 26px;
+  display: flex; justify-content: space-between;
+  font-family: 'Geist Mono', monospace;
+  font-size: 25px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(245, 243, 255, 0.6);
+  white-space: nowrap;
+}
+.footer .r { color: #C6FF00; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="canvas">
+    <header class="head">
+      <span>Anforderungsprofil</span>
+      <span class="page">02&mdash;03</span>
+    </header>
+    <hr class="headrule">
+
+    <main class="stage">
+      <h1>Du passt,<br><span class="neon">wenn:</span></h1>
+
+      <div class="req">
+        <h2><span class="idx">[01]</span>Motiviert</h2>
+        <p>Du willst wirklich was erreichen &mdash; nicht nur Stunden absitzen.</p>
+      </div>
+      <div class="req">
+        <h2><span class="idx">[02]</span>Wachsen</h2>
+        <p>Jede Woche ein St&uuml;ck besser als die Woche davor.</p>
+      </div>
+      <div class="req">
+        <h2><span class="idx">[03]</span>Disziplin</h2>
+        <p>Dranbleiben &mdash; auch ohne Chef im Nacken.</p>
+      </div>
+      <div class="req">
+        <h2><span class="idx">[04]</span>Reden</h2>
+        <p>Du kannst gut mit Menschen &mdash; und zuh&ouml;ren sowieso.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Erfahrung optional</span>
+      <span class="r">Einstellung Pflicht</span>
+    </footer>
+  </div>
+</body>
+</html>

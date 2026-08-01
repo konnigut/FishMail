@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body {
+  background:
+    radial-gradient(ellipse 900px 700px at 15% -5%, rgba(124, 58, 237, 0.55), transparent 65%),
+    radial-gradient(ellipse 800px 800px at 110% 55%, rgba(255, 59, 240, 0.28), transparent 60%),
+    radial-gradient(ellipse 900px 700px at 40% 115%, rgba(198, 255, 0, 0.16), transparent 55%),
+    #08010F;
+  color: #F5F3FF;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.grid {
+  position: absolute; inset: 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(245, 243, 255, 0.05) 0 1px, transparent 1px 96px),
+    repeating-linear-gradient(90deg, rgba(245, 243, 255, 0.05) 0 1px, transparent 1px 96px);
+}
+.canvas { position: relative; width: 1080px; height: 1920px; padding: 90px 90px 80px 90px; }
+
+.head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.26em; text-transform: uppercase;
+  color: #C6FF00;
+}
+.head .page { color: rgba(245, 243, 255, 0.55); letter-spacing: 0.16em; }
+.headrule { border: 0; border-top: 1px solid rgba(198, 255, 0, 0.4); margin-top: 26px; }
+
+.stage { margin-top: 140px; }
+.kicker {
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: #FF3BF0;
+  text-shadow: 0 0 24px rgba(255, 59, 240, 0.6);
+  margin-bottom: 54px;
+}
+h1 {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 1.04;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+h1 .neon {
+  color: #C6FF00;
+  text-shadow: 0 0 18px rgba(198, 255, 0, 0.55), 0 0 60px rgba(198, 255, 0, 0.35);
+}
+
+.sub {
+  margin-top: 72px;
+  font-size: 39px; line-height: 1.55;
+  max-width: 820px;
+  color: rgba(245, 243, 255, 0.85);
+}
+.sub strong { color: #F5F3FF; font-weight: 700; }
+
+.stat {
+  margin-top: 80px;
+  display: inline-block;
+  border: 2px solid #C6FF00;
+  box-shadow: 0 0 34px rgba(198, 255, 0, 0.28), inset 0 0 34px rgba(198, 255, 0, 0.07);
+  padding: 34px 42px;
+}
+.stat .l {
+  font-family: 'Geist Mono', monospace;
+  font-size: 24px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: rgba(245, 243, 255, 0.65);
+  margin-bottom: 12px;
+}
+.stat .v {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  color: #C6FF00;
+  text-shadow: 0 0 22px rgba(198, 255, 0, 0.5);
+}
+
+.footer {
+  position: absolute; left: 90px; right: 90px; bottom: 80px;
+  border-top: 1px solid rgba(245, 243, 255, 0.3);
+  padding-top: 26px;
+  display: flex; justify-content: space-between;
+  font-family: 'Geist Mono', monospace;
+  font-size: 25px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(245, 243, 255, 0.6);
+  white-space: nowrap;
+}
+.footer .r { color: #C6FF00; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="canvas">
+    <header class="head">
+      <span>Job-Vermittlung // privat</span>
+      <span class="page">01&mdash;03</span>
+    </header>
+    <hr class="headrule">
+
+    <main class="stage">
+      <p class="kicker">Kein Repost &mdash; ich kenne die Leute</p>
+      <h1>Dein Neben&shy;job zahlt 12&nbsp;&euro;.<br><span class="neon">Unserer nicht.</span></h1>
+      <p class="sub">Sales, <strong>100&nbsp;% remote</strong>, passt neben Uni und Hauptjob. Bezahlt wird nach <strong>Leistung</strong> &mdash; nicht nach abgesessenen Stunden.</p>
+      <div class="stat">
+        <p class="l">Closer-Schnitt</p>
+        <p class="v">2&ndash;5 Deals / Monat</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Weiter</span>
+      <span class="r">&rarr; ob du passt</span>
+    </footer>
+  </div>
+</body>
+</html>
