@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+  body { background: var(--ink); color: var(--paper); }
+
+  .register { color: var(--fog); }
+  .register .tag { color: var(--paper); }
+  .rule { background: rgba(242, 238, 228, 0.18); }
+
+  .stage { margin-top: 48px; }
+
+  .headline {
+    font-size: 104px;
+    letter-spacing: 0.005em;
+    margin-bottom: 44px;
+  }
+
+  .offer { display: flex; align-items: flex-start; }
+  .offer + .offer { margin-top: 36px; }
+
+  .offer .num {
+    font-family: 'Geist Mono', monospace;
+    font-size: 27px;
+    letter-spacing: 0.1em;
+    color: var(--signal);
+    width: 118px;
+    flex-shrink: 0;
+    padding-top: 12px;
+  }
+
+  .offer .word {
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+  }
+  .offer .desc {
+    margin-top: 12px;
+    font-size: 32px;
+    line-height: 1.45;
+    color: rgba(242, 238, 228, 0.75);
+    max-width: 720px;
+  }
+
+  .cta {
+    margin-top: 52px;
+    background: var(--signal);
+    color: var(--ink);
+    padding: 46px 60px 44px 60px;
+  }
+  .cta .lead {
+    font-family: 'Geist Mono', monospace;
+    font-size: 25px; letter-spacing: 0.3em; text-transform: uppercase;
+    margin-bottom: 26px;
+    color: rgba(12, 13, 16, 0.65);
+  }
+  .cta .big {
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 96px;
+    line-height: 0.96;
+    letter-spacing: 0.005em;
+  }
+  .cta .note {
+    margin-top: 24px;
+    font-size: 28px;
+    line-height: 1.45;
+    color: rgba(12, 13, 16, 0.78);
+  }
+
+  .footer .line { color: var(--fog); }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <header class="register">
+      <span class="tag">Das&nbsp;Angebot</span>
+      <span class="index">03&nbsp;/&nbsp;03</span>
+    </header>
+    <hr class="rule">
+
+    <main class="stage">
+      <h1 class="display headline">Was drin ist<br>f&uuml;r dich.</h1>
+
+      <div class="offer">
+        <span class="num">01</span>
+        <div>
+          <div class="word">Freiheit</div>
+          <p class="desc body-copy">100 % remote. Du arbeitest, wann und wo es in dein Leben passt.</p>
+        </div>
+      </div>
+
+      <div class="offer">
+        <span class="num">02</span>
+        <div>
+          <div class="word">Leistung z&auml;hlt</div>
+          <p class="desc body-copy">Bezahlt wird nach Ergebnis, nicht nach Anwesenheit &mdash; wer liefert, verdient richtig.</p>
+        </div>
+      </div>
+
+      <div class="offer">
+        <span class="num">03</span>
+        <div>
+          <div class="word">Echte Skills</div>
+          <p class="desc body-copy">Verkaufen, verhandeln, souver&auml;n auftreten &mdash; Sachen, die dir keine Vorlesung beibringt.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <p class="lead">Klingt nach dir?</p>
+        <p class="big">Schreib mir<br>&bdquo;Job&ldquo; per DM.</p>
+        <p class="note body-copy">Ich stell den Kontakt her: kurzes Gespr&auml;ch, ehrliche Infos &mdash; dann wei&szlig;t du, ob&rsquo;s passt. Kein Spam, versprochen.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <hr class="rule">
+      <div class="line">
+        <span>Ernst gemeint</span>
+        <span>Fragen&nbsp;&rarr;&nbsp;einfach melden</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

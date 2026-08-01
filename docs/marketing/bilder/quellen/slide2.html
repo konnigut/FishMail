@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+  body { background: var(--paper); color: var(--ink); }
+
+  .register { color: rgba(12, 13, 16, 0.45); }
+  .register .tag { color: var(--ink); }
+  .rule { background: rgba(12, 13, 16, 0.16); }
+
+  .stage { margin-top: 84px; }
+
+  .headline {
+    font-size: 118px;
+    letter-spacing: 0.005em;
+    margin-bottom: 78px;
+  }
+  .headline .accent {
+    background: var(--signal);
+    padding: 0 18px 4px 18px;
+    display: inline-block;
+    line-height: 0.98;
+  }
+
+  .req { display: flex; align-items: flex-start; }
+  .req + .req { margin-top: 54px; }
+
+  .req .num {
+    font-family: 'Geist Mono', monospace;
+    font-size: 27px;
+    letter-spacing: 0.1em;
+    color: rgba(12, 13, 16, 0.42);
+    width: 118px;
+    flex-shrink: 0;
+    padding-top: 16px;
+  }
+
+  .req .word {
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: 0.008em;
+  }
+  .req .desc {
+    margin-top: 18px;
+    font-size: 35px;
+    line-height: 1.45;
+    color: rgba(12, 13, 16, 0.72);
+    max-width: 700px;
+  }
+
+  .footer .line { color: rgba(12, 13, 16, 0.45); }
+  .footer .verdict { color: var(--ink); font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <header class="register">
+      <span class="tag">Die&nbsp;Anforderungen</span>
+      <span class="index">02&nbsp;/&nbsp;03</span>
+    </header>
+    <hr class="rule">
+
+    <main class="stage">
+      <h1 class="display headline">Das musst du<br><span class="accent">mitbringen.</span></h1>
+
+      <div class="req">
+        <span class="num">01</span>
+        <div>
+          <div class="word">Motivation</div>
+          <p class="desc body-copy">Du willst wirklich was erreichen &mdash; nicht nur Stunden absitzen.</p>
+        </div>
+      </div>
+
+      <div class="req">
+        <span class="num">02</span>
+        <div>
+          <div class="word">Wachstum</div>
+          <p class="desc body-copy">Du willst jede Woche ein St&uuml;ck besser werden als die Woche davor.</p>
+        </div>
+      </div>
+
+      <div class="req">
+        <span class="num">03</span>
+        <div>
+          <div class="word">Disziplin</div>
+          <p class="desc body-copy">Du bleibst dran &mdash; auch wenn gerade keiner zuschaut.</p>
+        </div>
+      </div>
+
+      <div class="req">
+        <span class="num">04</span>
+        <div>
+          <div class="word">Kommunikation</div>
+          <p class="desc body-copy">Du kannst gut reden, gern mit Menschen &mdash; und h&ouml;rst zu.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <hr class="rule">
+      <div class="line">
+        <span>Erfahrung ist nice.</span>
+        <span class="verdict">Einstellung entscheidet.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

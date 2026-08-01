@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+  body { background: var(--ink); color: var(--paper); }
+
+  .register { color: var(--fog); }
+  .register .tag { color: var(--paper); }
+  .rule { background: rgba(242, 238, 228, 0.18); }
+
+  /* Wasserzeichen-Konturwort im Hintergrund */
+  .ghost {
+    position: absolute;
+    right: -40px; top: 720px;
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 700;
+    font-size: 560px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(242, 238, 228, 0.05);
+    letter-spacing: 0.01em;
+    pointer-events: none;
+  }
+
+  .stage { margin-top: 118px; position: relative; }
+
+  .kicker {
+    font-family: 'Geist Mono', monospace;
+    font-size: 27px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--signal);
+    margin-bottom: 56px;
+  }
+  .kicker::before {
+    content: "";
+    display: inline-block;
+    width: 52px; height: 1px;
+    background: var(--signal);
+    vertical-align: middle;
+    margin-right: 26px;
+  }
+
+  h1.display { font-size: 176px; letter-spacing: 0.005em; }
+  h1 .hl {
+    color: var(--ink);
+    background: var(--signal);
+    padding: 0 26px 6px 26px;
+    display: inline-block;
+    line-height: 0.98;
+  }
+
+  .sub {
+    margin-top: 66px;
+    max-width: 760px;
+    font-size: 41px;
+    line-height: 1.5;
+    color: rgba(242, 238, 228, 0.86);
+  }
+  .sub strong { font-weight: 600; color: var(--paper); }
+
+  .meta-row {
+    margin-top: 60px;
+    display: flex; gap: 22px;
+  }
+  .chip {
+    font-family: 'Geist Mono', monospace;
+    font-size: 25px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 20px 30px;
+    border: 1px solid rgba(242, 238, 228, 0.28);
+    border-radius: 999px;
+    color: rgba(242, 238, 228, 0.85);
+  }
+
+  .footer .line { color: var(--fog); }
+  .footer .next { color: var(--signal); }
+</style>
+</head>
+<body>
+  <div class="ghost">JOB</div>
+  <div class="canvas">
+    <header class="register">
+      <span class="tag">Kurz&nbsp;in&nbsp;eigener&nbsp;Sache</span>
+      <span class="index">01&nbsp;/&nbsp;03</span>
+    </header>
+    <hr class="rule">
+
+    <main class="stage">
+      <p class="kicker">Kein Repost. Ich kenne die Leute.</p>
+      <h1 class="display">Ich<br>vermittle<br>gerade<br>einen <span class="hl">Job.</span></h1>
+      <p class="sub body-copy">Vertrieb in einem jungen Team, das <strong>Arbeitgeber&#8209;Kampagnen an Unis</strong> umsetzt. Kein Callcenter, kein komisches System &mdash; ein echter Job mit Leistung dahinter.</p>
+      <div class="meta-row">
+        <span class="chip">100 % Remote</span>
+        <span class="chip">Neben Uni / Hauptjob</span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <hr class="rule">
+      <div class="line">
+        <span>Weiterlesen</span>
+        <span class="next">&rarr;&nbsp;&nbsp;Was du mitbringen musst</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
