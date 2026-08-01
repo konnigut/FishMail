@@ -1,0 +1,69 @@
+/* Stil B — „Klartext“: warmes Editorial, Serifen, persönliche Notiz. 1080×1920 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --paper: #FBF6EC;
+  --ink: #1B1714;
+  --accent: #E8542F;
+  --soft: #9A8F82;
+  --margin: 100px;
+}
+
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+.canvas {
+  position: relative;
+  width: 1080px; height: 1920px;
+  display: flex; flex-direction: column;
+  padding: 92px var(--margin) 84px var(--margin);
+}
+
+/* Kopf: kleine Zeile + Seitenzahl */
+.masthead {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 25px; font-weight: 700;
+  letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--ink);
+}
+.masthead .page { color: var(--soft); font-weight: 400; letter-spacing: 0.14em; }
+
+.mastrule {
+  border: 0; border-top: 3px solid var(--ink);
+  margin-top: 28px;
+}
+.mastrule.thin { border-top: 1px solid rgba(27, 23, 20, 0.25); margin-top: 6px; }
+
+/* Serifen-Display */
+.serif { font-family: 'Gloock', serif; font-weight: 400; }
+.italic { font-family: 'Instrument Serif', serif; font-style: italic; }
+
+.accent { color: var(--accent); }
+
+/* Unterstreichung wie mit Stift */
+.uline {
+  box-shadow: inset 0 -18px 0 -6px rgba(232, 84, 47, 0.35);
+}
+
+/* Fußzeile */
+.footer {
+  position: absolute;
+  left: var(--margin); right: var(--margin);
+  bottom: 84px;
+}
+.footer .frule { border: 0; border-top: 3px solid var(--ink); margin-bottom: 26px; }
+.footer .line {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 26px;
+  white-space: nowrap;
+}
+.footer .line .l { font-weight: 400; color: var(--soft); }
+.footer .line .r { font-weight: 700; }

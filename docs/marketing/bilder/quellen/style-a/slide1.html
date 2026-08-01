@@ -62,7 +62,11 @@
 
   .meta-row {
     margin-top: 60px;
-    display: flex; gap: 22px;
+    display: flex; flex-wrap: wrap; gap: 22px;
+  }
+  .chip.money {
+    border-color: var(--signal);
+    color: var(--signal);
   }
   .chip {
     font-family: 'Geist Mono', monospace;
@@ -93,6 +97,7 @@
       <div class="meta-row">
         <span class="chip">100 % Remote</span>
         <span class="chip">Neben Uni / Hauptjob</span>
+        <span class="chip money">Bis 1.800 &euro; pro Abschluss</span>
       </div>
     </main>
 
