@@ -7,73 +7,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Geist+Mono:wght@400;700&family=Inter:wght@400;500;700;800&display=block" rel="stylesheet">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 1080px; height: 1920px; overflow: hidden; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; }
 body {
   background: linear-gradient(165deg, #FF2E63 0%, #FF6B2C 48%, #FFD23F 100%);
   color: #170410;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-.canvas { position: relative; width: 1080px; height: 1920px; padding: 90px 90px 80px 90px; }
+.canvas { position: relative; width: 1080px; height: 1350px; padding: 70px 80px 56px 80px; }
 
 .tag {
   display: inline-block;
   background: #170410; color: #FFD23F;
   font-family: 'Geist Mono', monospace;
-  font-size: 26px; letter-spacing: 0.22em; text-transform: uppercase;
-  padding: 18px 28px;
+  font-size: 24px; letter-spacing: 0.22em; text-transform: uppercase;
+  padding: 15px 24px;
   transform: rotate(-2deg);
 }
 .page {
-  position: absolute; top: 98px; right: 90px;
+  position: absolute; top: 76px; right: 80px;
   font-family: 'Geist Mono', monospace;
-  font-size: 26px; letter-spacing: 0.18em;
+  font-size: 24px; letter-spacing: 0.18em;
   color: rgba(23, 4, 16, 0.75);
 }
 
-.stage { margin-top: 110px; }
+.stage { margin-top: 60px; }
 h1 {
   font-family: 'Boldonse', sans-serif;
   font-weight: 400;
-  font-size: 96px;
-  line-height: 1.32;
+  font-size: 66px;
+  line-height: 1.3;
   text-transform: uppercase;
-  margin-bottom: 84px;
+  margin-bottom: 48px;
 }
 
 .card {
   background: #FFFFFF;
   border: 5px solid #170410;
-  box-shadow: 14px 14px 0 #170410;
-  padding: 38px 44px 36px 44px;
+  box-shadow: 12px 12px 0 #170410;
+  padding: 26px 36px 24px 36px;
 }
-.card + .card { margin-top: 56px; }
+.card + .card { margin-top: 36px; }
 .card:nth-child(odd) { transform: rotate(-1deg); }
 .card:nth-child(even) { transform: rotate(1deg); }
 
 .card .word {
   font-family: 'Boldonse', sans-serif;
-  font-size: 54px;
+  font-size: 42px;
   text-transform: uppercase;
   line-height: 1.1;
 }
 .card .word .no {
   color: #FF2E63;
-  margin-right: 18px;
+  margin-right: 16px;
 }
 .card p {
-  margin-top: 16px;
-  font-size: 33px; line-height: 1.4; font-weight: 500;
+  margin-top: 10px;
+  font-size: 27px; line-height: 1.35; font-weight: 500;
   color: rgba(23, 4, 16, 0.85);
 }
 
 .footer {
-  position: absolute; left: 90px; right: 90px; bottom: 80px;
+  position: absolute; left: 80px; right: 80px; bottom: 56px;
   border-top: 5px solid #170410;
-  padding-top: 26px;
+  padding-top: 22px;
   display: flex; justify-content: space-between;
   font-family: 'Geist Mono', monospace;
-  font-size: 25px; letter-spacing: 0.14em; text-transform: uppercase;
+  font-size: 23px; letter-spacing: 0.14em; text-transform: uppercase;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -85,7 +85,7 @@ h1 {
     <span class="page">2/3</span>
 
     <main class="stage">
-      <h1>Du passt,<br>wenn:</h1>
+      <h1>Du passt, wenn:</h1>
 
       <div class="card">
         <p class="word"><span class="no">01</span>Motiviert</p>
