@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body {
+  background: linear-gradient(165deg, #FF2E63 0%, #FF6B2C 48%, #FFD23F 100%);
+  color: #170410;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.canvas { position: relative; width: 1080px; height: 1920px; padding: 90px 90px 80px 90px; }
+
+.tag {
+  display: inline-block;
+  background: #170410; color: #FFD23F;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.22em; text-transform: uppercase;
+  padding: 18px 28px;
+  transform: rotate(-2deg);
+}
+.page {
+  position: absolute; top: 98px; right: 90px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.18em;
+  color: rgba(23, 4, 16, 0.75);
+}
+
+.stage { margin-top: 110px; }
+h1 {
+  font-family: 'Boldonse', sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 1.32;
+  text-transform: uppercase;
+  margin-bottom: 84px;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 5px solid #170410;
+  box-shadow: 14px 14px 0 #170410;
+  padding: 38px 44px 36px 44px;
+}
+.card + .card { margin-top: 56px; }
+.card:nth-child(odd) { transform: rotate(-1deg); }
+.card:nth-child(even) { transform: rotate(1deg); }
+
+.card .word {
+  font-family: 'Boldonse', sans-serif;
+  font-size: 54px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.card .word .no {
+  color: #FF2E63;
+  margin-right: 18px;
+}
+.card p {
+  margin-top: 16px;
+  font-size: 33px; line-height: 1.4; font-weight: 500;
+  color: rgba(23, 4, 16, 0.85);
+}
+
+.footer {
+  position: absolute; left: 90px; right: 90px; bottom: 80px;
+  border-top: 5px solid #170410;
+  padding-top: 26px;
+  display: flex; justify-content: space-between;
+  font-family: 'Geist Mono', monospace;
+  font-size: 25px; letter-spacing: 0.14em; text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="tag">Ob du passt</span>
+    <span class="page">2/3</span>
+
+    <main class="stage">
+      <h1>Du passt,<br>wenn:</h1>
+
+      <div class="card">
+        <p class="word"><span class="no">01</span>Motiviert</p>
+        <p>Du willst wirklich was erreichen &mdash; nicht nur Stunden absitzen.</p>
+      </div>
+      <div class="card">
+        <p class="word"><span class="no">02</span>Wachsen</p>
+        <p>Jede Woche ein St&uuml;ck besser als die Woche davor.</p>
+      </div>
+      <div class="card">
+        <p class="word"><span class="no">03</span>Disziplin</p>
+        <p>Dranbleiben &mdash; auch ohne Chef im Nacken.</p>
+      </div>
+      <div class="card">
+        <p class="word"><span class="no">04</span>Reden</p>
+        <p>Du kannst gut mit Menschen &mdash; und zuh&ouml;ren sowieso.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Erfahrung optional</span>
+      <span>Einstellung Pflicht</span>
+    </footer>
+  </div>
+</body>
+</html>

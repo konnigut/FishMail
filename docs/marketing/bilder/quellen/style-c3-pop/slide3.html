@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body {
+  background: #FFDE00;
+  background-image: radial-gradient(rgba(16, 16, 16, 0.09) 2.4px, transparent 2.4px);
+  background-size: 26px 26px;
+  color: #101010;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.canvas { position: relative; width: 1080px; height: 1920px; padding: 84px 90px 80px 90px; }
+.frame { position: absolute; inset: 40px; border: 6px solid #101010; pointer-events: none; }
+
+.head { display: flex; justify-content: space-between; align-items: center; }
+.head .tag {
+  background: #2B44FF; color: #FFDE00;
+  font-size: 26px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 16px 26px;
+  transform: rotate(-1.5deg);
+  box-shadow: 8px 8px 0 #101010;
+}
+.head .page { font-size: 28px; font-weight: 700; }
+
+.stage { margin-top: 100px; }
+h1 {
+  font-family: 'Erica One', sans-serif;
+  font-size: 112px;
+  line-height: 1.0;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+h1 .red { color: #FF3A2F; -webkit-text-stroke: 3px #101010; }
+
+.hero {
+  background: #101010;
+  color: #FFDE00;
+  box-shadow: 14px 14px 0 #FF3A2F;
+  padding: 46px 50px 44px 50px;
+  transform: rotate(-0.8deg);
+}
+.hero .l {
+  font-size: 25px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.hero .v {
+  font-family: 'Erica One', sans-serif;
+  font-size: 80px;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+.hero p {
+  margin-top: 18px;
+  font-size: 30px; line-height: 1.45; font-weight: 500;
+  color: rgba(255, 222, 0, 0.85);
+}
+
+.duo { display: flex; gap: 44px; margin-top: 56px; }
+.mini {
+  flex: 1;
+  background: #FFFFFF;
+  border: 5px solid #101010;
+  box-shadow: 12px 12px 0 #101010;
+  padding: 32px 36px;
+}
+.mini.blue { transform: rotate(0.8deg); }
+.mini.red { transform: rotate(-0.8deg); }
+.mini .v {
+  font-family: 'Erica One', sans-serif;
+  font-size: 64px;
+  line-height: 1;
+}
+.mini.red .v { color: #FF3A2F; }
+.mini.blue .v { color: #2B44FF; }
+.mini p {
+  margin-top: 12px;
+  font-size: 28px; line-height: 1.4; font-weight: 500;
+}
+
+.cta {
+  margin-top: 78px;
+  text-align: center;
+}
+.cta .big {
+  display: inline-block;
+  font-family: 'Erica One', sans-serif;
+  font-size: 66px;
+  text-transform: uppercase;
+  background: #FF3A2F; color: #FFFFFF;
+  border: 5px solid #101010;
+  box-shadow: 12px 12px 0 #101010;
+  padding: 28px 46px;
+  transform: rotate(-1.2deg);
+}
+
+.footer {
+  position: absolute; left: 90px; right: 90px; bottom: 84px;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 27px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.footer .r { background: #101010; color: #FFDE00; padding: 10px 18px; }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="frame"></div>
+    <header class="head">
+      <span class="tag">Die Zahlen</span>
+      <span class="page">3/3</span>
+    </header>
+
+    <main class="stage">
+      <h1>Reden wir<br>&uuml;ber <span class="red">Geld.</span></h1>
+
+      <div class="hero">
+        <p class="l">Closer &middot; &Oslash; 2&ndash;5 Abschl&uuml;sse im Monat</p>
+        <p class="v">3.150&ndash;9.000&nbsp;&euro;</p>
+        <p>im Monat m&ouml;glich &mdash; 12,5&nbsp;% Provision, 1.575&ndash;1.800&nbsp;&euro; pro Abschluss.</p>
+      </div>
+
+      <div class="duo">
+        <div class="mini red">
+          <p class="v">500&nbsp;&euro;</p>
+          <p>pro Setter-Termin, der zum Abschluss f&uuml;hrt.</p>
+        </div>
+        <div class="mini blue">
+          <p class="v">250&nbsp;&euro;</p>
+          <p>wenn &uuml;ber deinen Repost jemand startet.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <span class="big">&bdquo;JOB&ldquo; per DM &rarr;</span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Kein Spam</span>
+      <span class="r">Nur der Kontakt</span>
+    </footer>
+  </div>
+</body>
+</html>

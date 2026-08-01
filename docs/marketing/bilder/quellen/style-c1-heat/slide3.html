@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body {
+  background: linear-gradient(165deg, #FF2E63 0%, #FF6B2C 48%, #FFD23F 100%);
+  color: #170410;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.canvas { position: relative; width: 1080px; height: 1920px; padding: 90px 90px 80px 90px; }
+
+.tag {
+  display: inline-block;
+  background: #170410; color: #FFD23F;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.22em; text-transform: uppercase;
+  padding: 18px 28px;
+  transform: rotate(-2deg);
+}
+.page {
+  position: absolute; top: 98px; right: 90px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 26px; letter-spacing: 0.18em;
+  color: rgba(23, 4, 16, 0.75);
+}
+
+.stage { margin-top: 100px; }
+h1 {
+  font-family: 'Boldonse', sans-serif;
+  font-size: 96px;
+  line-height: 1.32;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.hero {
+  background: #170410;
+  color: #FFFFFF;
+  border: 5px solid #170410;
+  box-shadow: 14px 14px 0 rgba(23, 4, 16, 0.35);
+  padding: 48px 52px 46px 52px;
+  transform: rotate(-1deg);
+}
+.hero .label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 25px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #FFD23F;
+  margin-bottom: 20px;
+}
+.hero .big {
+  font-family: 'Boldonse', sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #FFD23F;
+}
+.hero p {
+  margin-top: 20px;
+  font-size: 31px; line-height: 1.45; font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.row {
+  margin-top: 48px;
+  background: #FFFFFF;
+  border: 5px solid #170410;
+  box-shadow: 14px 14px 0 #170410;
+  padding: 34px 44px;
+  display: flex; align-items: baseline; gap: 36px;
+}
+.row.r2 { transform: rotate(1deg); }
+.row .sum {
+  font-family: 'Boldonse', sans-serif;
+  font-size: 56px;
+  white-space: nowrap;
+}
+.row .sum.pink { color: #FF2E63; }
+.row p { font-size: 30px; line-height: 1.4; font-weight: 500; color: rgba(23, 4, 16, 0.85); }
+
+.cta {
+  margin-top: 64px;
+  text-align: center;
+}
+.cta .big {
+  display: inline-block;
+  font-family: 'Boldonse', sans-serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  background: #170410; color: #FFD23F;
+  padding: 30px 44px 38px 44px;
+  transform: rotate(-1.5deg);
+  box-shadow: 14px 14px 0 rgba(23, 4, 16, 0.35);
+}
+
+.footer {
+  position: absolute; left: 90px; right: 90px; bottom: 80px;
+  border-top: 5px solid #170410;
+  padding-top: 26px;
+  display: flex; justify-content: space-between;
+  font-family: 'Geist Mono', monospace;
+  font-size: 25px; letter-spacing: 0.14em; text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="tag">Die Zahlen</span>
+    <span class="page">3/3</span>
+
+    <main class="stage">
+      <h1>Reden wir<br>&uuml;ber Geld.</h1>
+
+      <div class="hero">
+        <p class="label">Closer &middot; &Oslash; 2&ndash;5 Abschl&uuml;sse im Monat</p>
+        <p class="big">3.150&ndash;9.000&nbsp;&euro;</p>
+        <p>im Monat drin &mdash; 12,5&nbsp;% Provision, macht 1.575&ndash;1.800&nbsp;&euro; pro Abschluss.</p>
+      </div>
+
+      <div class="row">
+        <span class="sum pink">500&nbsp;&euro;</span>
+        <p>pro Termin als Setter, der zum Abschluss f&uuml;hrt.</p>
+      </div>
+      <div class="row r2">
+        <span class="sum">250&nbsp;&euro;</span>
+        <p>Pr&auml;mie, wenn &uuml;ber deinen Repost jemand startet.</p>
+      </div>
+
+      <div class="cta">
+        <span class="big">&bdquo;JOB&ldquo; per DM &rarr;</span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Kein Spam</span>
+      <span>Ich stell nur den Kontakt her</span>
+    </footer>
+  </div>
+</body>
+</html>
